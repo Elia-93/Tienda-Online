@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Animalia</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800&display=swap');
+.product-list {
+    padding: 20px 10px 20px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.product-list>ul {
+    margin: 0 -10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.product-list>ul>li {
+    width: 25%;
+    padding: 10px;
+}
+.white-box {
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+    background-color: #ffffff;
+    padding: 35px 20px;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+.wishlist-icon {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+}
+.wishlist-icon img {
+    width: 20px;
+    height: 20px;
+}
+.product-img {
+    min-height: 135px;
+}
+.product-img img {
+    max-width: 100%;
+    max-height: 130px;
+    display: block;
+    margin: 0 auto;
+}
+.product-bottom {
+    text-align: center;
+}
+.product-name {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin: 10px 0 10px;
+    font-weight: 600;
+    max-height: 48px;
+    min-height: 48px;
+    overflow: hidden;
+}
+.price {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+}
+.blue-btn {    
+  background: #13cfdf;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    max-width: 132px;
+    margin: 10px auto 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.price .line-through {
+    font-size: 14px;
+    color: #999999;
+    font-weight: 400;
+    vertical-align: 1px;
+    display: inline-block;
+    text-decoration: line-through;
+    margin-left: 4px;
+}
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .logo{
+        margin-left: 20px;
+      }
+ 
+    </style>
+
+    
+  </head>
+
+  <body>
+    
+<header>
+  <div class="navbar navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        
+        <img src="huella.png">
+      <div class="logo">
+        <strong>Animalia</strong></div>
+      </a>
+         <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html" class="nav-link link-dark" aria-current="page">Inicio</a></li>
+        <li class="nav-item"><a href="perros.php" class="nav-link link-dark">Perros</a></li>
+        <li class="nav-item"><a href="productos.html" class="nav-link link-dark">Gatos</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark">Roedores</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark">Peces</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark">Pajaros</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark">Reptiles</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark">Nosotros</a></li>
+      </ul>
+      <div class="text-end">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+</svg>
+       <a href="login.php">
+          <button type="button" class="btn btn-linkk">Login</button></a>
+        </div>
+    </div>
+  </div>
+
+ 
+</header>
+
+
+<div class="container">
+    <div class="product-list">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="white-box">
+            <div class="product-img">
+              <img src="https://www.91-img.com/pictures/laptops/asus/asus-x552cl-sx019d-core-i3-3rd-gen-4-gb-500-gb-dos-1-gb-61721-large-1.jpg">
+            </div>
+            <div class="product-bottom">
+              <div class="product-name">Asus X552CL-SX019D Laptop</div>
+              <div class="price">
+                <span class="rupee-icon">32,00</span>€ 
+              </div>
+              <a href="#" class="blue-btn">Añadir</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="white-box">
+            <div class="product-img">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/81nreGN5qQL._SL1500_.jpg">
+            </div>
+            <div class="product-bottom">
+              <div class="product-name">ASUS X507 Core i5 - 8th Gen 15.6"</div>
+              <div class="price">
+                <span class="rupee-icon">30,00</span>€
+              </div>
+              <a href="#" class="blue-btn">Añadir</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="white-box">
+            <div class="product-img">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/81RrcHvDGbL._SY355_.jpg">
+            </div>
+            <div class="product-bottom">
+              <div class="product-name">ASUS VivoBook S400CA</div>
+              <div class="price">
+                <span class="rupee-icon">50,00</span>€ 
+              </div>
+              <a href="#" class="blue-btn">Añadir</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="white-box">
+            <div class="product-img">
+              <img src="https://cdn.mos.cms.futurecdn.net/kwP2nL8FAVboognXmW6nvP-320-80.jpg">
+            </div>
+            <div class="product-bottom">
+              <div class="product-name">Asus laptops</div>
+              <div class="price">
+                <span class="rupee-icon">60,00</span>€ 
+              </div>
+              <a href="#" class="blue-btn">Añadir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Subir</a>
+    </p>
+    <p class="mb-1">&copy; Animalia</p>
+  </div>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
